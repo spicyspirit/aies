@@ -1,0 +1,187 @@
+{% extends "_base3.html" %}
+{% block title %}Contact Us | All Industrial Electric Supply{% endblock %}
+{% block description %}
+<meta name="description" content="AIES would love to hear from you. Our team is always up for challenge and has solutions to your electrical concerns.">
+{% endblock %}
+{% block keywords %}
+<meta name="keywords" content="Contact us, enquire, enquiries, all industrial electric supply">
+{% endblock %}
+{% block h1 %}<h1 id="logo"><a href="http://www.allindustrialsupply.com" title="All Industrial Electric Supply">Contact Us</a></h1>{% endblock %}
+{% block bodyclass %}<body class="contactus"> {% endblock %}
+<!-- Primary Page Layout
+================================================== -->
+{% block containerclass %}<div class="container gray">{% endblock %}  <!-- Begin container -->
+{% block bodycontent %}
+
+
+    <h2 class="titles">Contact Us</h2>
+
+		<div class="row">
+			<div class="eight columns about">
+				<br>
+				<p style="font-size:16px;margin-left:10px;line-height:22px;color:#133762">
+					All Industrial Electric Supply<br>
+					895 Mitten Road<br>
+					Burlingame, CA  94010<br>
+					Local <a href="tel:+16507770060" class="tel">650-777-0060</a><br>
+					Toll free <a href="tel:+18554255463" class="tel">855-425-5463</a><br>
+					Emergency <a href="tel:+16502494521" class="tel">650-249-4521</a><br>
+					Fax: <a href="tel:+16507770069" class="tel">650-777-0069</a><br>
+					<br>
+					Request a quote or leave a message.
+				</p>
+				<br>
+				<form method="post" action="contact" style="margin-left: 10px;">
+          {% if sented %}
+          <small>Message was sent successfully. We will contact you shortly.</small>
+          <br /><br />
+          <script type="text/javascript">
+          _gaq.push(["_trackEvent", "contactus", "contact"]); //for an event goal.
+          </script>
+          <!-- Google Code for Contact form Conversion Page -->
+          <script type="text/javascript">
+          /* <![CDATA[ */
+          var google_conversion_id = 995324855;
+          var google_conversion_language = "en";
+          var google_conversion_format = "2";
+          var google_conversion_color = "ffffff";
+          var google_conversion_label = "2H75CMHdtAQQt-fN2gM";
+          var google_conversion_value = 1;
+          /* ]]> */
+          </script>
+          <script type="text/javascript"
+          src="http://www.googleadservices.com/pagead/conversion.js">
+          </script>
+          <noscript>
+          <div style="display:inline;">
+          <img height="1" width="1" style="border-style:none;" alt=""
+          src="http://www.googleadservices.com/pagead/conversion/995324855/?value=1&amp;label=2H75CMHdtAQQt-fN2gM&amp;guid=ON&amp;script=0"/>
+          </div>
+          </noscript>
+          {% endif %}
+          {% if sender %}
+          <small>Failed to send your message. Please try again.</small>
+          <br /><br />
+          {% endif %}
+          <!-- marketing@aies.com -->
+					<label for="name">Name</label>
+					<input type="text" name="name" />
+					<label for="company">Company</label>
+					<input type="text" name="company" />
+          <label for="phone">Phone</label>
+          <input type="text" name="phone" />
+					<label for="email">Email</label>
+					<input type="email" name="email" {% if email %}style="border-color:red"{% endif %} />
+					<label for="message">Message</label>
+					<textarea name="message"></textarea>
+					<button type="submit" id="submit">Submit Form</button>
+				</form>
+			</div>
+
+			<div class="eight columns">
+        <table id="contactlist">
+          <tr>
+            <td class="name">Alex Vaysberg</td>
+            <td class="email"><a href="mailto:alex@aies.com?Subject=Website Inquiry">President, CEO</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="name">Tye Atwood</td>
+            <td class="email"><a href="mailto:tye@aies.com?Subject=Website Inquiry">COO</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="name">Bryan Bartlett</td>
+            <td class="email"><a href="mailto:bbartlett@aies.com?Subject=Website Inquiry">VP of Sales and Marketing</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="name">Sheri Coleman</td>
+            <td class="email"><a href="mailto:scoleman@aies.com?Subject=Website Inquiry">Office Manager</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="name">James Donald</td>
+            <td class="email"><a href="mailto:jdonald@aies.com?Subject=Website Inquiry">Materials Manager</a></td>
+            <td></td>
+          </tr>
+            <tr>
+            <td colspan="3"><strong>Inside Sales</strong></td>
+          </tr>
+            <tr>
+            <td class="name">Nick Abbott</td>
+            <td class="email"><a href="mailto:nick@aies.com?Subject=Website Inquiry">nick@aies.com</a></td>
+            <td><a href="tel:+16504253008" class="tel">650-425-3008</a></td>
+          <tr>
+            <td class="name">Dillon Krouse</td>
+            <td class="email"><a href="mailto:dillon@aies.com?Subject=Website Inquiry">dillon@aies.com</a></td>
+            <td><a href="tel:+16504253019" class="tel">650-425-3019</a></td>
+          </tr>
+          <tr>
+            <td class="name">Armando Zarco</td>
+            <td class="email"><a href="mailto:azarco@aies.com?Subject=Website Inquiry">azarco@aies.com</a></td>
+            <td><a href="tel:+16505394259" class="tel">650-539-4259</a></td>
+          </tr>
+          <tr>
+            <td class="name">Jeff Bourquin</td>
+            <td class="email"><a href="mailto:jeff@aies.com?Subject=Website Inquiry">jeff@aies.com</a></td>
+            <td><a href="tel:+16504644121" class="tel">650-539-4264</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><strong>Counter Sales</strong></td>
+          </tr>
+          <tr>
+            <td class="name">Tony Shepherd</td>
+            <td class="email"><a href="mailto:tshepherd@aies.com?Subject=Website Inquiry">tshepherd@aies.com</a></td>
+            <td><a href="tel:+16505394271" class="tel">650-539-4271</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><strong>Outside Sales</strong></td>
+          </tr>
+          <tr>
+            <td class="name">Alex Vaysberg</td>
+            <td class="email"><a href="mailto:alex@aies.com?Subject=Website Inquiry">alex@aies.com </a></td>
+            <td><a href="tel:+16502494521" class="tel">650-249-4521 (Cell)</a></td>
+          </tr>
+          <tr>
+            <td class="name">Jack Smith</td>
+            <td class="email"><a href="mailto:jack@aies.com?Subject=Website Inquiry">jack@aies.com</a></td>
+            <td><a href="tel:+14087184144" class="tel">408-718-4144 (Cell)</a></td>
+          </tr>
+          <tr>
+            <td class="name">Zack Isla</td>
+            <td class="email"><a href="mailto:zack@aies.com?Subject=Website Inquiry">zack@aies.com</a></td>
+            <td><a href="tel:+16502550801" class="tel">650-255-0801 (Cell)</a></td>
+          </tr>
+           <tr>
+            <td class="name">Ryan Nicholson</td>
+            <td class="email"><a href="mailto:ryan@aies.com?Subject=Website Inquiry">ryan@aies.com</a></td>
+            <td><a href="tel:+16504253009" class="tel">408-421-1611 (cell)</a></td>
+          </tr>
+          <tr>
+            <td colspan="3"><strong>Operations</strong></td>
+          </tr>
+          <tr>
+            <td class="name">Jessica Pignati</td>
+            <td class="email"><a href="mailto:jessica@aies.com?Subject=Website Inquiry">jessica@aies.com</a></td>
+            <td>Accounts Payable</td>
+            <td></td>
+          </tr>
+           <tr>
+            <td class="name">Stephanie Dere</td>
+            <td class="email"><a href="mailto:sdere@aies.com?Subject=Website Inquiry">sdere@aies.com</a></td>
+            <td>Accounts Receivable</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td colspan="3"><strong>Purchasing</strong></td>
+          </tr>
+          <tr>
+            <td class="name">Ronald Peraza</td>
+            <td class="email"><a href="mailto:rperaza@aies.com?Subject=Website Inquiry">rperaza@aies.com</a></td>
+            <td></td>
+          </tr>
+        </table>
+			</div>
+		</div>
+ {% endblock %}

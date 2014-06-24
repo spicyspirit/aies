@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- ========== IE FIX ========== -->
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<title>{% block title %}  {% endblock %}</title>
+{% block description %}  {% endblock %}
+{% block keywords %}  {% endblock %}
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+<meta name="format-detection" content="telephone=no">
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1, maximum-scale=1, width=device-width">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="static/stylesheets/skeleton.css" />
+<link rel="stylesheet" href="static/stylesheets/layout.css" />
+
+<!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="static/images/favicon.ico">
+<link rel="apple-touch-icon" href="static/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="static/images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="static/images/apple-touch-icon-114x114.png">
+
+<!-- JS
+================================================== -->
+<script type="text/javascript" src="static/javascripts/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="static/javascripts/selectnav.min.js"></script>
+<script type="text/javascript" src="static/javascripts/jcarousel.js"></script>
+<script type="text/javascript" src="static/javascripts/jquery.slides.min.js"></script>
+</head>
+
+{% block bodyid %}  {% endblock %}
+{% block bodyclass %}  {% endblock %}
+{% block containerclass %}  {% endblock %}
+<!-- Begin container -->
+    
+    <header>  <!-- Begin Header -->
+{% block h1 %} {% endblock %}
+        <h3 id="slogan">Our Mission is to prove to every single customer that we are their best electrical parts solution - <span>24 hours a day</span></h3>
+        <p id="tels">Local <a href="tel:+16507770060" class="tel">650-777-0060</a><br>Toll free <a href="tel:+18554255463" class="tel">855-425-5463</a><br>Emergency <a href="tel:+16502494521" class="tel">650-249-4521</a></p>
+    </header>  <!--End Header-->
+     
+     <div class="row navbar"><!--Begin navigation -->
+        <form action="/search" method ="GET" id="searchs">
+            <input type="text" name="q" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Enter keyword or part number':this.value;" value="Enter keyword or part number" id="search_keyword" />
+            <button type="submit" id="searchgo">Search</button>
+        </form>
+        <ul id="nav">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="about.html" title="About Us">About Us</a></li>
+            <li><a href="team.html" title="Team">Team</a></li>
+            <li><a href="services.html" title="Services">Services</a></li>
+            <li><a href="testimonials.html" title="Testimonials">Testimonials</a></li>
+            <li><a href="linecard.html" title="Linecard">Linecard</a></li>
+            <li><a href="videos.html" title="Contact">Videos</a></li>
+            <li><a href="contactus.html" title="Contact">Contact</a></li>
+        </ul>
+    </div>  <!--End navigation -->
+
+{% block bodycontent %} {% endblock %}
+
+
+
+    <div class="row links"> <!-- Begin Links Section -->
+		<hr style="margin-bottom:12px;">
+        <div class="four columns links">
+             <h5>Connect With Us</h5>
+            <ul>
+        
+<li><a href="newsletters.html" title="Newsletters">Newsletters</a></li>
+                <li><a href="press.html" title="Press releases">Press releases</a></li>
+                
+<li><a href="http://www.youtube.com/user/Allindustrialsupply/videos" target="_blank">Youtube</a></li>
+<li><a href="http://www.linkedin.com/company/all-industrial-electric-supply" target="_blank">LinkedIn</a></li>
+                <li><a href="http://www.facebook.com/allindustrial" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/allindustrial" target="_blank">Twitter</a></li>
+                <li><a href="https://plus.google.com/109040306737672505633#109040306737672505633/posts" target="_blank">Google+</a></li> 
+            </ul>
+        </div>
+        <div class="four columns links">
+            <h5>Customer Service</h5>
+            <ul>
+                <li><a href="static/pdf/creditapp.pdf" target="_blank">Credit Application</a></li>
+                <li><a href="static/pdf/Linecard_All_Industrial_Electric_Supply.pdf" target="_blank">Line Card</a></li>
+                <li><a href="sitemap.html" target="_blank">Site Map</a></li>
+        </ul>
+        </div>
+        <div class="four columns links">
+            <h5>Tools</h5>
+            <ul>
+                <li><a href="http://www.olie.com" target="_blank">Search Manufacturer Info</a></li>
+                <li><a href="http://ewweb.com/current_copper_prices/" target="_blank">Metals Pricing</a></li>
+                <li><a href="http://www.electricsmarts.com/container.aspx?tab=smartecat&distid=24867&limit=" target="_blank">Smart eCat</a></li>
+            </ul>
+        </div>
+        <div class="four columns links">
+            <h5>Industry Resources</h5>
+            <ul>
+                <li><a href="http://www.imarkgroup.com" target="_blank">IMARK Group</a></li>
+                <li><a href="http://naed.org" target="_blank">NAED</a></li>
+                <li><a href="http://nema.org" target="_blank">NEMA</a></li>
+                <li><a href="http://ewweb.com" target="_blank">Electrical Wholesaling</a></li>
+                <li><a href="http://www.controleng.com" target="_blank">Control Engineering</a></li>
+            </ul>
+        </div>
+    </div> <!--End Links Section -->
+
+    <div class="footer">
+        
+<br><br>
+
+<p style="text-align: center; font-size: 80%;">
+            Copyright &copy; 2013 All Industrial Electric Supply. 895 Mitten Road, Burlingame, CA 94010 &nbsp; Phone <a href="tel:+18554255463" class="tel">855-425-5463</a>
+            <br><br>
+            <a class="footera" href="http://www.bbb.org/greater-san-francisco/business-reviews/electric-equipment-and-supplies-wholesale/all-industrial-electric-supply-in-burlingame-ca-74790" title="All_Industrial_Electric_Supply_Better_Business_Bureau">
+                <img src="images/logo_bbb.png" alt="All_Industrial_Electric_Supply_Better_Business_Bureau" />
+            </a>
+            <a class="footera" href="http://www.naed.org/CEP_Certificants/" title="Certified Electrical Professional" style="margin-left: 10px">
+                <img src="images/cep.png" alt="All_Industrial_Electric_Supply_Better_Business_Bureau" />
+            </a>
+
+        </p>
+    </div>
+
+</div><!-- End container -->
+
+<!-- image Scroller
+================================================== -->
+<script type="text/javascript">
+    $(function (){
+        $('div.st-content').hide();
+        $('a.tabs').click(function () {
+            if ($(this).next('div.st-content').is(":hidden")) {
+                $('a.tabs').removeClass('active');
+                $(this).addClass('active');
+                $('div.st-content').slideUp().filter(this.hash).slideDown();
+            }
+            return false;
+        }).filter(':first').click();
+        jQuery('#jcarousel ul').jcarousel({
+            visible: 4,
+            wrap: 'circular'
+        });
+    });
+</script>
+
+<!-- Mobile Menu
+================================================== -->
+<script>selectnav('nav'); </script>
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-24491362-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 995324855;
+var google_conversion_label = "j0EWCNHbtAQQt-fN2gM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+<script>
+$( document ).ready(function() {
+  $('#slides').slidesjs({
+    width: 940,
+    height: 300,
+    play: {
+        auto: true
+    }
+  });
+});
+</script>
+
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/995324855/?value=0&amp;label=j0EWCNHbtAQQt-fN2gM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+</body>
+</html>

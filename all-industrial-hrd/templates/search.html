@@ -1,0 +1,35 @@
+{% extends "_base3.html" %}
+{% block title %}Search | All Industrial Inventory {% endblock %}
+{% block description %}
+<meta name="description" content="Search AIES Inventory">
+{% endblock %}
+{% block keywords %}
+<meta name="keywords" content="Search, inventory, all industrial electric supply">
+{% endblock %}
+{% block h1 %}<h1 id="logo"><a href="http://www.allindustrialsupply.com" title="All Industrial Electric Supply">Search</a></h1>{% endblock %}
+{% block bodyclass %}<body class="searchpage"> {% endblock %}
+{% block containerclass %}<div class="container gray">{% endblock %}  
+{% block bodycontent %}
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$('iframe#result').load(function(){
+	    $(".loader").remove();
+	}).show();
+});
+</script>
+
+<div class="ten columns result">
+	<img src="static/images/loader.gif" class="loader" style="position:relative;left:50%;margin-top:100px;" alt="loading" />
+	<iframe src="http://66.2.41.146:53358/OLIE/stkchk.asp?q={{q}}" id="result" style="display:none" width="100%" height="800px" scrolling="yes" style="border:0px" frameborder="0"></iframe>
+</div>
+
+<div class="six columns helps">
+	<p><b>Can't find the parts you want?  Don't worry.</b></p>
+	<p style="font-size:14px;line-height:18px;">Call us now and we can find you the right parts or substitutes in a few minutes! </p>
+	<strong>
+		Local <a href="tel:+16507770060" class="tel">650-777-0060</a><br>Toll free <a href="tel:+18554255463" class="tel">855-425-5463</a><br>Emergency <a href="tel:+16502494521" class="tel">650-249-4521</a>
+	</strong>
+</div>
+
+{% endblock %}
